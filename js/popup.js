@@ -111,7 +111,9 @@ $(function() {
           shake('#signin_form');
         }
       },
-      error: function(xhr, status, err){}
+      error: function(xhr, status, err){
+        shake('#signin_form');        
+      }
     });
     return false;
   });
@@ -145,11 +147,13 @@ $(function() {
           refresh_user_panel();
           show_work_panel();
         }else{
-          $('#signin_password').val('');
-          shake('#signin_form');
+          $('#signup_password').val('');
+          shake('#signup_form');
         }
       },
-      error: function(xhr, status, err){}
+      error: function(xhr, status, err){
+        shake('#signup_form');        
+      }
     });
     return false;
   });
