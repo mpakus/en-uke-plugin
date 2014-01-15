@@ -1,0 +1,22 @@
+{
+  "name": "En uke - links aggregator extension", 
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "En uke - keep your links only 1 week",
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://en-uke.com/*",
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "scripts": ["js/jquery-1.10.2.min.js"]
+  },
+
+  "browser_action": {
+    "default_title": "En uke",
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,132 @@
+body,html{
+  font: 12px/13px Tahoma, Verdana, Arial;
+  margin: 0;
+  padding: 5px 10px 5px 5px;
+  min-width: 320px;
+}
+.window{
+  color: #000;
+  border-radius: 3px;
+  padding: 5px;
+  min-width: 140px;
+}
+:focus{
+  outline: none;
+}
+
+.hide{
+  display: none;
+}
+
+a{
+  color: #E91180;  
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  color: #1F1F47;  
+}
+h3{
+  color: #2395FB;
+  font-size: 15px;
+  height: 17px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+  /* auth form */
+/*  fieldset{
+    width: 100%;
+    border: 1px solid #EEE;
+    margin: 0;
+    padding: 5px;
+  }
+*/  .form-control{
+    width: 99%;
+    font: 12px/13px Tahoma, Verdana, Arial;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #EEE;
+  }
+  a.btn:hover{
+    text-decoration: none;
+  }
+  .btn{
+    color: #FFF;
+    border-radius: 3px;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+  }
+  .btn-signin{
+    background: #24DA85;
+  }
+  .btn-signup{
+    background: #73CADC;
+  }
+  .btn-add{
+    background: #1A93FF;
+  }
+  .btn-links{
+    background: #FFBA44;
+  }
+  .btn-keep{
+    background: #C5DA4D;
+  }
+  .btn-unkeep{
+    background: #DA0084;
+  }
+
+  /* menu */
+  .menu{
+    list-style: none;
+    margin:0;
+    padding:0;  
+  }
+  .menu li{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  .menu a{
+    display: block;
+  }
+  
+  /* User panel*/
+  .user_panel{
+    margin-bottom: 10px;
+    line-height: 23px;
+    height: 23px;
+    float: right;
+  }
+  .user_avatar{
+    height: 21px;
+    border-radius: 50%;
+    border: 2px solid #EEE;
+    float: left;
+    margin-right: 5px;
+  } 
+  .user_email{
+    font-weight: bold;
+  }
+  .links{ margin:0; padding:0; list-style: none; }
+  .links li{ margin:0; padding:0; margin-bottom: 7px; }
+  .links a{
+    color: #FFBA44;
+    line-height: 13px;
+    height: 13px;
+    display: block;
+    overflow: hidden;
+  }
+  a.ajax{
+    border-bottom: 1px dashed #E91180;        
+  }
+  a.ajax:hover{
+    text-decoration: none;    
+  }
+  .more-link{
+    text-align: right;
+  }

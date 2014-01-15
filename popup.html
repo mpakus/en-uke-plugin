@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="js/popup.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="window">
+
+    <div id="signin_panel" class="hide">
+      <h3>Sign in</h3>
+      <form method="POST" action="http://en-uke.com/users/auth.json" id="signin_form">
+        <input type="text" name="email" id="signin_email" placeholder="email" class="form-control" />
+        <input type="password" name="password" id="signin_password" placeholder="password" class="form-control" />
+        <input type="submit" value="signin" class="btn btn-signin" /> | <button class="btn btn-second" id="toggle_to_signup">signup</button>
+      </form>
+    </div>
+
+    <div id="signup_panel" class="hide">
+      <h3>Sign up</h3>
+      <form method="POST" action="http://en-uke.com/users.json" id="signup_form">
+        <input type="text" name="email" id="signin_email" placeholder="email" class="form-control" />
+        <input type="password" name="password" id="signup_password" placeholder="password" class="form-control" />
+        <input type="submit" value="signup" class="btn btn-signup" /> | <button class="btn btn-second" id="toggle_to_signin">signin</button>
+      </form>
+    </div>
+
+    <div id="work_panel" class="hide" data-exist-url="http://en-uke.com/links/exist.json">
+      <div class="user_panel">
+        <span id="user_email" class="user_email"></span> | <a href="#" class="ajax" id="logout">exit</a>
+      </div>
+      <h3>En uke</h3>
+      <ul class="menu">
+        <li><a href="http://en-uke.com/links.json" class="btn btn-add hide" id="add_link">Add current page</a></li>
+        <li><a href="http://en-uke.com/links/keep.json" class="btn btn-keep hide" id="keep_link">Keep page link</a></li>
+        <li><a href="http://en-uke.com/links/keep.json" class="btn btn-unkeep hide" id="unkeep_link">UnKeep page link</a></li>
+        <li><a href="http://en-uke.com/links.json" class="btn btn-links" id="get_links">My last links</a></li>
+      </ul>
+      <div id="links_list">        
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
